@@ -5,16 +5,23 @@ class Djtoolkit < Formula
   version "0.1.2"
 
   url "https://github.com/yenkz/djtoolkit/releases/download/v0.1.2/djtoolkit-0.1.2-arm64.tar.gz"
-  sha256 "27e40d9c64b127336fd424f25502c66d91b4e65ae1e8009f6d886693ea478828"
+  sha256 "2fc3a886a575c66ee683f3d1b14d40b71227791cf9e2ea6c76858d138dabc37d"
 
   depends_on "chromaprint"
   depends_on :macos
 
   def install
     bin.install "djtoolkit"
+    (share/"djtoolkit").install "DJToolkit Setup.app" if Dir.exist?("DJToolkit Setup.app")
   end
 
-  test do
-    assert_match "djtoolkit", shell_output("#{bin}/djtoolkit --help")
+  def caveats
+    <<~EOS
+      Run the setup wizard to configure djtoolkit:
+        djtoolkit setup
+
+      Or open the app directly:
+        open #{share}/djtoolkit/DJToolkit\\ Setup.app
+    EOS
   end
 end
