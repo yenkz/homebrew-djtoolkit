@@ -2,10 +2,10 @@ class Djtoolkit < Formula
   desc "DJ music library toolkit — download, fingerprint, tag, and manage tracks"
   homepage "https://github.com/yenkz/djtoolkit"
   license "MIT"
-  version "0.1.13"
+  version "0.1.14"
 
-  url "https://github.com/yenkz/djtoolkit/releases/download/v0.1.13/djtoolkit-0.1.13-arm64.tar.gz"
-  sha256 "d161a5e14f82eca1b07a2db48cce8c5e39222533368a1f76c4908c8d273faca2"
+  url "https://github.com/yenkz/djtoolkit/releases/download/v0.1.14/djtoolkit-0.1.14-arm64.tar.gz"
+  sha256 "a8b985496be268e26097b001d2f983d0c5ce8d5ea23fcaf8234cfea99bf8224d"
 
   depends_on "chromaprint"
   depends_on :macos
