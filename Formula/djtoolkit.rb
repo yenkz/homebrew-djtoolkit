@@ -5,7 +5,7 @@ class Djtoolkit < Formula
   version "0.1.16"
 
   url "https://github.com/yenkz/djtoolkit/releases/download/v0.1.16/djtoolkit-0.1.16-arm64.tar.gz"
-  sha256 "b99aa5fde71033ca04747fbf358d864bd447b25a331c30c88e59b609c2fd60c1"
+  sha256 "0c236f5009af0e30301548cd59877b92484ee2a4e3fa21334c6a2f311200c7d2"
 
   depends_on "chromaprint"
   depends_on :macos
