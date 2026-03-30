@@ -1,7 +1,7 @@
 cask "djtoolkit" do
   arch arm: "aarch64", intel: "x86_64"
   version "0.3"
-  sha256 arm:   "509ff8def2c66db1185752059b5f50ebfb7779298eda4450de83e9647b22ca54",
+  sha256 arm:   "4a01aaf8700d952add1e6a11b23d70fa3c06d5b1cc982fdf545cb6d1af31356c",
          intel: ""
 
   url "https://github.com/yenkz/djtoolkit/releases/download/agent-v#{version}/djtoolkit_#{version}_#{arch}.dmg",
