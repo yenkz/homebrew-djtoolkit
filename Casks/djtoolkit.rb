@@ -1,10 +1,10 @@
 cask "djtoolkit" do
   arch arm: "aarch64", intel: "x86_64"
-  version "0.3.1"
-  sha256 arm:   "e427959f951ee7172d65d0e324251dddd5301908f1d5adaa9b8d2af6854f4654",
+  version "0.3.2"
+  sha256 arm:   "500bbd73fd953b6607672f25941ee3646eff6913fc880a42ddf675429ae48ba6",
          intel: ""
 
-  url "https://github.com/yenkz/djtoolkit/releases/download/agent-v#{version}/djtoolkit_#{version}_#{arch}.dmg",
+  url "https://github.com/yenkz/djtoolkit/releases/download/v0.3.2/djtoolkit_#{version}_#{arch}.dmg",
       verified: "github.com/yenkz/djtoolkit/"
   name "DJ Toolkit"
   desc "DJ library agent — download, tag, and organize music automatically"
